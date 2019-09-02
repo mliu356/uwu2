@@ -15,6 +15,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -73,6 +79,22 @@ public class RegistrationActivity extends AppCompatActivity {
                         }
                     }
                 });
+
+        //get firebase user
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        //get reference
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(); /**
+        //mDatabaseReference = mDatabase.getReference().child("name");
+        //mDatabaseReference.setValue("Donald Duck");
+        User newUser = new User(user.getUid(), user.getEmail());
+        //build child
+        ref.child(user.getUid()).setValue("newUser"); //set to user class??? **/
+        DatabaseReference usersRef = ref.child("users");
+        Map<String, User> users = new HashMap<>();
+        //users.put("gracehop", new User("December 9, 1906", "Grace Hopper"));
+        //usersRef.push().setValue(new User(user.getUid(), user.getEmail()));
+        //usersRef.setValue(users);
+        usersRef.push().setValue(new User(user.getUid(), user.getEmail()));
     }
 
     private void initializeUI() {
