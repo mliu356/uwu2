@@ -74,6 +74,13 @@
         android:layout_below="@id/button6"
         android:text=":3" />
 
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:text="LOGOUT O.O" />
+
 
 
 </RelativeLayout>
