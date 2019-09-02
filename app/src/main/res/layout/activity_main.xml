@@ -11,20 +11,41 @@
         android:id="@+id/welcomeuwu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:text="hewwo welcome!! uwu" />
 
-    <TextView
+    <RelativeLayout
         android:id="@+id/pointstext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/welcomeuwu"
-        android:layout_centerHorizontal="true"
-        android:text="you currently have: " />
+        android:layout_below="@+id/welcomeuwu"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/pointstext1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you currently have: " />
+
+        <TextView
+            android:id="@+id/pointsnum"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pointstext1"
+            android:layout_alignTop="@+id/pointstext1"
+            android:text="XXX"/>
+        <TextView
+            android:id="@+id/pointstext2"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pointsnum"
+            android:layout_alignTop="@+id/pointsnum"
+            android:text=" pts"/>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="200dp"
@@ -35,51 +56,58 @@
         android:padding="5dp">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button0"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="hewwo!!" />
         <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button0"
+            android:text="^_^" />
+
+        <Button
             android:id="@+id/button2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button1"
-            android:text="^_^" />
+            android:layout_below="@id/button1"
+            android:text="owo" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/button2"
-            android:text="owo" />
+            android:text="omo" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/button3"
-            android:text="omo" />
+            android:text="uwu" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/button4"
-            android:text="uwu" />
+            android:text="o.o" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/button5"
-            android:text="o.o" />
+            android:text=":3" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/button6"
-            android:text=":3" />
+            android:layout_below="@id/button5"
+            android:text=".___." />
 
     </RelativeLayout>
 
