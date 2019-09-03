@@ -38,6 +38,13 @@ public class LoginActivity extends AppCompatActivity {
                 loginUserAccount();
             }
         });
+        Button btn = (Button)findViewById(R.id.register);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+            }
+        });
     }
 
     private void loginUserAccount() {

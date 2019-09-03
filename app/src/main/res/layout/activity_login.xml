@@ -7,7 +7,17 @@
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/background"
     tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEWCOME BACK!! uwu"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +40,14 @@
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
         android:text="Login" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Account? Register !!!" />
 
     <ProgressBar
         android:id="@+id/progressBar"

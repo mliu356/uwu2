@@ -44,6 +44,14 @@ public class RegistrationActivity extends AppCompatActivity {
                 registerNewUser();
             }
         });
+        Button btn = (Button)findViewById(R.id.login);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+            }
+        });
     }
 
     private void registerNewUser() {

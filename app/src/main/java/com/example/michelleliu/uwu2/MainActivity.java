@@ -27,15 +27,18 @@ public class MainActivity extends AppCompatActivity {
         //mDatabaseReference.setValue("Donald Duck");
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
+        Button btn = (Button)findViewById(R.id.logout);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            }
+        });
+
 
         //myRef.setValue("Hello, World!");
         //writeNewUser("0", "angi", "angi@angi.com");
     }
 
-    /**
-    private void setNewUser(String userId, String name, String email) {
-        User user = new User(userId, name, email);
-        myRef.child("users").child(userId).setValue(user);
-    }**/
 
 }
