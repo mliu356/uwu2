@@ -48,22 +48,60 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="200dp"
+        android:id="@+id/globalpointstext"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pointstext"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/globalpointstext1"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="global score: " />
+
+        <TextView
+            android:id="@+id/globalpointsnum"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/globalpointstext1"
+            android:layout_alignTop="@+id/globalpointstext1"
+            android:text="XXX"/>
+        <TextView
+            android:id="@+id/globalpointstext2"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/globalpointsnum"
+            android:layout_alignTop="@+id/globalpointsnum"
+            android:text=" pts"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/globalpointstext"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:padding="5dp">
 
         <Button
             android:id="@+id/button0"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:text="hewwo!!" />
         <Button
             android:id="@+id/button1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_below="@+id/button0"
             android:text="^_^" />
 
@@ -71,6 +109,10 @@
             android:id="@+id/button2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_below="@id/button1"
             android:text="owo" />
 
@@ -78,6 +120,10 @@
             android:id="@+id/button3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_below="@id/button2"
             android:text="omo" />
 
@@ -85,6 +131,10 @@
             android:id="@+id/button4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_below="@id/button3"
             android:text="uwu" />
 
@@ -92,6 +142,10 @@
             android:id="@+id/button5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_below="@id/button4"
             android:text="o.o" />
 
@@ -99,6 +153,9 @@
             android:id="@+id/button6"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_below="@id/button5"
             android:text=":3" />
 
@@ -106,7 +163,10 @@
             android:id="@+id/button7"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/button5"
+            android:textColor="@color/white"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_below="@id/button6"
             android:text=".___." />
 
     </RelativeLayout>
