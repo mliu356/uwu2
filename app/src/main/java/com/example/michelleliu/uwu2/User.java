@@ -3,10 +3,13 @@ package com.example.michelleliu.uwu2;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class User {
-    public String username;
+    public String id;
     public String email;
-    public int points;
+    //public int points;
     public int omo;
     public int colon3;
     public int odoto;
@@ -15,24 +18,24 @@ public class User {
     public int owo;
     public int uwu;
 
+    /**
     public User() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
-        this.points = points;
-        this.omo = omo;
-        this.colon3 = colon3;
-        this.odoto = odoto;
-        this.caretsmile = caretsmile;
-        this.hewwo = hewwo;
-        this.owo = owo;
-        this.uwu = uwu;
-    }
+    }**/
 
     public User(String username, String email) {
-        this.username = username;
+        this.id = id;
         this.email = email;
+        //this.points = points = 0;
+        this.omo = omo = 0;
+        this.colon3 = colon3 = 0;
+        this.odoto = odoto = 0;
+        this.caretsmile = caretsmile = 0;
+        this.hewwo = hewwo = 0;
+        this.owo = owo = 0;
+        this.uwu = uwu = 0;
     }
 
-    // Get a reference to our users
-    final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference("points");
+
 }
+
