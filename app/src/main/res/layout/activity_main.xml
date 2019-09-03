@@ -80,6 +80,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/uwu_buttons"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/globalpointstext"
@@ -170,15 +171,21 @@
             android:layout_below="@id/button6"
             android:text=".___." />
 
+        <Button
+            android:id="@+id/logout"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button7"
+            android:text="logout O.O" />
+
     </RelativeLayout>
 
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button7"
-        android:text="LOGOUT O.O" />
+
 
 
 
